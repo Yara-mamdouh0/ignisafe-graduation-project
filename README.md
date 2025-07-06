@@ -1,25 +1,19 @@
-# 🔥 Fire and Smoke Detection System using AI and IOT
+# 🔥 Fire and Smoke Detection System
 
-This project is an AI-powered real-time fire and smoke detection system. It combines object detection using the YOLO model with FastAPI for API management, and Firebase for real-time sensor data monitoring and control. The system is designed for quick response to fire hazards in indoor or outdoor environments.
-
----
-
-## 🚀 Features
-
-- **YOLO-based Fire and Smoke Detection** (YOLOv8 or later)
--  **Live Camera Streaming** (IP or USB camera)
--  **Firebase Integration** to monitor temperature/gas sensors
--  **Auto Trigger Detection** based on sensor thresholds
-- **JSON Logging** of detection results (with timestamps, type, and bounding boxes)
-- **REST API with FastAPI** for setting camera URL and controlling the system
+This project is designed to help detect fire and smoke in real-time using a camera. It can automatically start working when dangerous levels of heat or gas are detected, helping to prevent disasters before they happen.
 
 ---
 
-## 🛠 Tools and Technologies
+## 📌 What This Project Does
 
-- **YOLOv8** – Object detection model
-- **FastAPI** – High-performance web framework
-- **OpenCV** – Video processing and camera stream handling
-- **Firebase Realtime Database** – Sensor data monitoring and threshold triggers
-- **Threading** – Parallel execution for live camera feed and model inference
-- **Uvicorn** – ASGI server for running FastAPI
+- Detects **fire** and **smoke** in live video from a camera
+- Uses sensor data (like temperature or gas levels) to know when to start checking
+- Sends alerts and saves information when danger is found
+- Can be used in homes, offices, factories, or outdoor areas
+
+---
+
+## 🎯 Why We Built This
+
+Early detection of fire and smoke can save lives and property. We wanted to create a system that works **quickly**, **accurately**, and doesn’t need expensive hardware. It can run on a simple setup and can be used in many real-world situations.
+
